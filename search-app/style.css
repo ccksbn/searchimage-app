@@ -1,0 +1,151 @@
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #ece5dd; /* WhatsApp background color */
+}
+
+/* Center the container on the page */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Style the form wrapper */
+.form-wrapper {
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px; /* Add some space between the form and images */
+}
+
+/* Style the form */
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Style the input field */
+#form input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 2px 7px 36px 4px rgba(79,213,74,0.54);
+}
+
+/* Light gray placeholder text */
+#form input[type="text"]::placeholder {
+  color: #a0a0a0;
+  opacity: 1;
+}
+
+#form input[type="text"]:focus {
+  border-color: #25d366; /* WhatsApp green color */
+  outline: none; /* Remove the default browser outline */
+  box-shadow: 0 0 5px rgba(37, 211, 102, 0.5); /* Optional: Add a subtle shadow */
+}
+
+/* Style the button wrapper */
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Style the buttons */
+#form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #25d366;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+#form button:hover {
+  background-color: #1c1e21;
+}
+
+/* Style the clear button differently */
+#clearButton {
+  background-color: #dc3545;
+}
+
+#clearButton:hover {
+  background-color: #c82333;
+}
+
+/* Style the image container */
+.imageListWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  max-width: 1200px; 
+  width: 100%;
+}
+
+/* Style the image cards */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card img {
+  display: block;
+  
+}
+
+.alert-success {
+  color: #006400;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0%;
+  font-weight: bolder
+}
+
+.alert-danger{
+  color: red;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0%;
+  font-weight: bolder;
+
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .form-wrapper {
+    width: 90%;
+  }
+
+  #form input[type="text"] {
+    font-size: 14px;
+  }
+
+  #form button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
